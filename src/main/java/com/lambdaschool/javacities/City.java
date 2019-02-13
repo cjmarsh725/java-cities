@@ -12,15 +12,15 @@ public class City
 {
     private @Id @GeneratedValue Long id;
     private String name;
-    private int population;
+    private int homePrice;
     private int affordability;
 
     public City() { }
 
-    public City(String name, int population, int affordability)
+    public City(String name, int homePrice, int affordability)
     {
         this.name = name;
-        this.population = population;
+        this.homePrice = homePrice;
         this.affordability = affordability;
     }
 }
